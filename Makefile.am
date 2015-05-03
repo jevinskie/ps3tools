@@ -46,7 +46,7 @@ bin_PROGRAMS = 	sceverify \
 		eidsplitr \
 		spp
 
-bin_SCRIPTS = pupexplode
+bin_SCRIPTS = pupexplode pupexplode-scetool
 
 if HAVE_LIBGMP
     bin_PROGRAMS += scekrit
