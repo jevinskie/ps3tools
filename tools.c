@@ -848,7 +848,7 @@ int ecdsa_get_params(u32 type, u8 *p, u8 *a, u8 *b, u8 *N, u8 *Gx, u8 *Gy)
 	if (key_build_path(path) < 0)
 		return -1;
 
-	strncat(path, "/curves", sizeof path);
+	strncat(path, "/curves", sizeof(path) - strlen(path) - 1);
 
 	if (key_read(path, sizeof tbl, tbl) < 0)
 		return -1;

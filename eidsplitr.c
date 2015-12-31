@@ -4,6 +4,10 @@
 
 void
 DumpEidData (FILE * pFile, int iInputSize, int iEidCount,
+  char *pFilenamePrefix);
+
+void
+DumpEidData (FILE * pFile, int iInputSize, int iEidCount,
 	     char *pFilenamePrefix)
 {
   FILE *pOutput;
